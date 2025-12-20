@@ -104,22 +104,25 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="2"><a href="#step-7-full-example-copy-this" class="nav-link">Step 7: Full example (COPY THIS)</a>
+            <li class="nav-item" data-bs-level="1"><a href="#learnings" class="nav-link">Learnings</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#linux" class="nav-link">Linux</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            
-            <li class="nav-item" data-bs-level="1"><a href="#ssh-known_hosts" class="nav-link">SSH known_hosts</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#what-is-it" class="nav-link">What is it?</a>
+            <li class="nav-item" data-bs-level="2"><a href="#golang" class="nav-link">Golang</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#why-is-it-needed" class="nav-link">Why is it needed?</a>
+            <li class="nav-item" data-bs-level="2"><a href="#others" class="nav-link">Others</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#common-commands" class="nav-link">Common commands</a>
+            <li class="nav-item" data-bs-level="2"><a href="#how-to-use-this-site" class="nav-link">How to use this site</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#notes" class="nav-link">Notes</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -130,25 +133,52 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<!-- rebuild -->
-
+<h1 id="learnings">Learnings</h1>
+<p>This site contains my technical learnings, notes, and explanations collected over time.
+The content is organized by topic and is intended to be both a personal reference
+and a shareable knowledge base.</p>
 <hr />
-<h2 id="step-7-full-example-copy-this">Step 7: Full example (COPY THIS)</h2>
-<p>Paste this into <code>ssh-known-hosts.md</code>:</p>
-<p>```md</p>
-<h1 id="ssh-known_hosts">SSH known_hosts</h1>
-<h2 id="what-is-it">What is it?</h2>
-<p><code>known_hosts</code> is a file used by SSH to store server fingerprints.</p>
-<h2 id="why-is-it-needed">Why is it needed?</h2>
+<h2 id="linux">Linux</h2>
+<p>Notes related to Linux internals, commands, and system behavior.</p>
 <ul>
-<li>Prevents man-in-the-middle attacks</li>
-<li>Ensures you connect to the same server</li>
-<li>Protects against fake servers</li>
+<li><a href="linux/known_hosts/">SSH known_hosts</a>
+  <br/>Understanding how SSH verifies server identity and prevents man-in-the-middle attacks.</li>
 </ul>
-<h2 id="common-commands">Common commands</h2>
-<p>```bash
-ssh user@server
-ssh-keygen -R hostname</p></div>
+<hr />
+<h2 id="golang">Golang</h2>
+<p>Learnings from working with Go, especially in the context of Kubernetes operators.</p>
+<ul>
+<li><a href="golang/reconciler-basics/">Reconciler basics</a>
+  <br/>Detailed explanation of how the Kubernetes reconciler works, how requests are routed,
+  and why reconciliation is idempotent.</li>
+</ul>
+<hr />
+<h2 id="others">Others</h2>
+<p>Miscellaneous notes that don’t fit into a single core category.</p>
+<ul>
+<li>
+<p><a href="others/Helpfile/">Helpfile</a>
+  <br/>General helper notes and references.</p>
+</li>
+<li>
+<p><a href="others/gitfilecommands/">Git commands</a>
+  <br/>Commonly used Git commands and workflows for day-to-day development.</p>
+</li>
+</ul>
+<hr />
+<h2 id="how-to-use-this-site">How to use this site</h2>
+<ul>
+<li>Use the <strong>left navigation menu</strong> to browse by topic</li>
+<li>Each page focuses on <strong>one specific learning</strong></li>
+<li>Pages are written in Markdown and rendered using MkDocs</li>
+</ul>
+<hr />
+<h2 id="notes">Notes</h2>
+<ul>
+<li>URLs do <strong>not</strong> end with <code>.md</code></li>
+<li>Each page is mapped to a folder-style URL</li>
+<li>Content is continuously evolving as new learnings are added</li>
+</ul></div>
             </div>
         </div>
 
@@ -230,5 +260,5 @@ ssh-keygen -R hostname</p></div>
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-12-20 08:49:19.976452+00:00
+Build Date UTC : 2025-12-20 08:58:56.139420+00:00
 -->
