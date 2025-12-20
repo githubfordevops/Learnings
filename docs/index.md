@@ -23,6 +23,9 @@ Learnings from working with Go, especially in the context of Kubernetes operator
   <br/>Detailed explanation of how the Kubernetes reconciler works, how requests are routed,
   and why reconciliation is idempotent.
 
+- [Sync Waitgroup](golang/sync_waitgroup/)
+  <br/>Explantion of How Sync_waitgroup works with sample code snippets.
+
 ---
 
 ## Others
