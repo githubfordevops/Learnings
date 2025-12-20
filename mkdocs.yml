@@ -10,5 +10,5 @@ nav:
       - Reconciler basics: golang/reconciler-basics.md
 
   - Others:
-     - Helpfile: others/Helpfile.md
-     - Git Commands: others/gitfilecommands.md
+      - Helpfile: others/Helpfile.md
+      - Git Commands: others/gitfilecommands.md
