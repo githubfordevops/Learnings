@@ -1,9 +1,4 @@
-#Learnings are stored here
-
-Store the technical know hows of the studysSSH known hosts
-
-
-This is how you write **Linux commands, YAML, Python, Go**, etc.
+<!-- rebuild -->
 
 ---
 
