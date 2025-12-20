@@ -1,7 +1,8 @@
-site_name: Engineering Learnings
+site_name: Learnings
 
 nav:
-  - Home: README.md
+  - Home: index.md
   - Linux:
-      - SSH known_hosts: docs/linux/known-hosts.md
-      - Reconciler: docs/golang/reconciler-basics.md
+      - SSH known_hosts: linux/known-hosts.md
+  - Golang:
+      - Reconciler: golang/reconciler-basics.md
