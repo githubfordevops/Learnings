@@ -74,6 +74,27 @@
             
             <li class="nav-item" data-bs-level="1"><a href="#learnings-are-stored-here" class="nav-link">Learnings are stored here</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#step-7-full-example-copy-this" class="nav-link">Step 7: Full example (COPY THIS)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#ssh-known_hosts" class="nav-link">SSH known_hosts</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#what-is-it" class="nav-link">What is it?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#why-is-it-needed" class="nav-link">Why is it needed?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#common-commands" class="nav-link">Common commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -83,8 +104,24 @@
 
 <h1 id="learnings-are-stored-here">Learnings are stored here</h1>
 <p>Store the technical know hows of the studysSSH known hosts</p>
-<p>This file explains what known_hosts is.</p>
-<p>It is used by SSH for security.</p></div>
+<p>This is how you write <strong>Linux commands, YAML, Python, Go</strong>, etc.</p>
+<hr />
+<h2 id="step-7-full-example-copy-this">Step 7: Full example (COPY THIS)</h2>
+<p>Paste this into <code>ssh-known-hosts.md</code>:</p>
+<p>```md</p>
+<h1 id="ssh-known_hosts">SSH known_hosts</h1>
+<h2 id="what-is-it">What is it?</h2>
+<p><code>known_hosts</code> is a file used by SSH to store server fingerprints.</p>
+<h2 id="why-is-it-needed">Why is it needed?</h2>
+<ul>
+<li>Prevents man-in-the-middle attacks</li>
+<li>Ensures you connect to the same server</li>
+<li>Protects against fake servers</li>
+</ul>
+<h2 id="common-commands">Common commands</h2>
+<p>```bash
+ssh user@server
+ssh-keygen -R hostname</p></div>
             </div>
         </div>
 
@@ -166,5 +203,5 @@
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-12-20 07:07:33.410122+00:00
+Build Date UTC : 2025-12-20 07:10:05.789338+00:00
 -->
