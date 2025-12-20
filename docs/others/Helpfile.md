@@ -21,10 +21,12 @@ You’ve written your **first proper technical note** 🎉
 | What | Syntax |
 |---|---|
 Heading | `# ## ###` |
+After #, a space has to be present
 Bullet list | `- item` |
 Bold | `**text**` |
 Code | `` `code` `` |
 Code block | ``` ``` |
+3 `s optionally followed by lang(ex:go) and then 3`s to close the code block
 Link | `[text](url)` |
 
 ---
