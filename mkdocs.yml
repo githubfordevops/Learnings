@@ -8,6 +8,7 @@ nav:
 
   - Golang:
       - Reconciler basics: golang/reconciler-basics.md
+      - Sync_waitgroup: golang/sync_waitgroup.md
 
   - Others:
       - Helpfile: others/Helpfile.md
