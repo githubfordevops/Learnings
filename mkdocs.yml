@@ -13,3 +13,6 @@ nav:
   - Others:
       - Helpfile: others/Helpfile.md
       - Git Commands: others/gitfilecommands.md
+
+  - Kubernetes:
+      - NSR: k8s/NSR.md
