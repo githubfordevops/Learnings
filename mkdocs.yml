@@ -15,4 +15,5 @@ nav:
       - Git Commands: others/gitfilecommands.md
 
   - Kubernetes:
+      - Documentation: k8s/k8sdocumentation.md
       - NSR: k8s/NSR.md
