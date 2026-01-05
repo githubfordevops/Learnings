@@ -20,6 +20,6 @@ module nf-lib
 go 1.21
 ```
 
-Run the below for all the dependencies to be downloaded:
+Run the below for all the dependencies to be downloaded(optional):
 
-`go mod tidy(optional)`
+`go mod tidy`
