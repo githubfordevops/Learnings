@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>📈 Bullish Engulfing at Daily Support - Learnings</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Learnings</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Linux</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../linux/known_hosts/" class="dropdown-item">SSH known_hosts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Golang</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../golang/reconciler-basics/" class="dropdown-item">Reconciler basics</a>
+</li>
+                                    
+<li>
+    <a href="../../golang/sync_waitgroup/" class="dropdown-item">Sync_waitgroup</a>
+</li>
+                                    
+<li>
+    <a href="../../golang/module-addition/" class="dropdown-item">module-addition</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Others</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../others/Helpfile/" class="dropdown-item">Helpfile</a>
+</li>
+                                    
+<li>
+    <a href="../../others/gitfilecommands/" class="dropdown-item">Git Commands</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Kubernetes</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../k8s/k8sdocumentation/" class="dropdown-item">Documentation</a>
+</li>
+                                    
+<li>
+    <a href="../../k8s/NSR/" class="dropdown-item">NSR</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Finance</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../3R_Trading_Framework/" class="dropdown-item">3R-Strategy</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#bullish-engulfing-at-daily-support" class="nav-link">📈 Bullish Engulfing at Daily Support</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#1-what-is-a-bullish-engulfing-candle" class="nav-link">1️⃣ What Is a Bullish Engulfing Candle</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#2-what-daily-support-really-means" class="nav-link">2️⃣ What “Daily Support” Really Means</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#3-ideal-conditions-for-this-setup" class="nav-link">3️⃣ Ideal Conditions for This Setup ✅</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#4-entry-strategies" class="nav-link">4️⃣ Entry Strategies</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#5-stop-loss-placement-mandatory" class="nav-link">5️⃣ Stop-Loss Placement (Mandatory)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#6-target-planning" class="nav-link">6️⃣ Target Planning 🎯</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#7-multi-timeframe-confirmation-pro-technique" class="nav-link">7️⃣ Multi-Timeframe Confirmation (Pro Technique)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#8-when-not-to-trade-this" class="nav-link">8️⃣ When NOT to Trade This ❌</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#9-common-mistakes-traders-make" class="nav-link">9️⃣ Common Mistakes Traders Make</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#pro-insight" class="nav-link">🧠 Pro Insight</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#quick-checklist-before-entry" class="nav-link">✅ Quick Checklist (Before Entry)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#best-use-case" class="nav-link">📌 Best Use Case</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="bullish-engulfing-at-daily-support">📈 Bullish Engulfing at Daily Support</h1>
+<p><em>A Practical Price Action Guide</em></p>
+<hr />
+<h2 id="1-what-is-a-bullish-engulfing-candle">1️⃣ What Is a Bullish Engulfing Candle</h2>
+<p>A <strong>bullish engulfing</strong> candle occurs when:
+- A green (bullish) candle <strong>fully engulfs</strong> the body of the previous red (bearish) candle
+- Buyers overpower sellers completely</p>
+<p><img width="500" height="340" alt="image" src="https://github.com/user-attachments/assets/49ea7b6a-862c-4ac7-9b84-d29fa1eb0557" /></p>
+<p><strong>What it means:</strong>  </p>
+<blockquote>
+<p>Control shifts from sellers to buyers.</p>
+</blockquote>
+<p>📌 The candle body matters more than the wick.</p>
+<hr />
+<h2 id="2-what-daily-support-really-means">2️⃣ What “Daily Support” Really Means</h2>
+<p>Daily support is <strong>not a single line</strong>, but a <strong>zone</strong> where price has reacted before.</p>
+<h3 id="strong-daily-support-characteristics">Strong daily support characteristics:</h3>
+<ul>
+<li>Multiple historical touches</li>
+<li>Strong rejections (long lower wicks / impulsive green candles)</li>
+<li>Psychological levels (round numbers like 100, 500, 1000)</li>
+</ul>
+<p>📌 Zones &gt; exact prices.</p>
+<hr />
+<h2 id="3-ideal-conditions-for-this-setup">3️⃣ Ideal Conditions for This Setup ✅</h2>
+<p>This setup works best when <strong>most of these align</strong>:</p>
+<ul>
+<li>📍 Bullish engulfing forms <strong>at a daily support zone</strong></li>
+<li>📉 Prior trend was <strong>down or corrective</strong></li>
+<li>🕯️ Engulfing candle closes <strong>near its high</strong></li>
+<li>📊 Volume is <strong>higher than previous candles</strong></li>
+<li>🚫 No immediate resistance overhead</li>
+</ul>
+<p>If these conditions align → <strong>high probability trade</strong></p>
+<hr />
+<h2 id="4-entry-strategies">4️⃣ Entry Strategies</h2>
+<h3 id="conservative-entry-safer">🔹 Conservative Entry (Safer)</h3>
+<ul>
+<li>Enter <strong>above the high</strong> of the engulfing candle</li>
+<li>Confirms continuation</li>
+</ul>
+<h3 id="aggressive-entry-better-rr">🔹 Aggressive Entry (Better R:R)</h3>
+<ul>
+<li>Enter near <strong>50% retracement</strong> of the engulfing candle</li>
+<li>Higher reward, higher risk</li>
+</ul>
+<p>📌 Beginners should start with <strong>conservative entry</strong>.</p>
+<hr />
+<h2 id="5-stop-loss-placement-mandatory">5️⃣ Stop-Loss Placement (Mandatory)</h2>
+<p>Choose one:</p>
+<ul>
+<li>Below the <strong>low of the engulfing candle</strong></li>
+<li>Below the <strong>entire support zone</strong> (preferred)</li>
+</ul>
+<p>📌 If price breaks support again → trade idea is invalid.</p>
+<hr />
+<h2 id="6-target-planning">6️⃣ Target Planning 🎯</h2>
+<p>Always plan targets <strong>before entering</strong>.</p>
+<h3 id="target-options">Target options:</h3>
+<ul>
+<li>🎯 Target 1: Nearest daily resistance / recent swing high</li>
+<li>🎯 Target 2: 2R–3R (risk-to-reward)</li>
+<li>🎯 Trail for trend continuation if structure supports it</li>
+</ul>
+<p>📌 Never enter if upside space is limited.</p>
+<hr />
+<h2 id="7-multi-timeframe-confirmation-pro-technique">7️⃣ Multi-Timeframe Confirmation (Pro Technique)</h2>
+<ul>
+<li><strong>Daily:</strong> Identify support + engulfing</li>
+<li><strong>15-min / 5-min:</strong> Higher low or consolidation</li>
+<li><strong>1-min:</strong> Breakout entry (optional)</li>
+</ul>
+<p>📌 This filters many false engulfing signals.</p>
+<hr />
+<h2 id="8-when-not-to-trade-this">8️⃣ When NOT to Trade This ❌</h2>
+<p>Avoid this setup when:</p>
+<ul>
+<li>Engulfing forms in <strong>sideways/choppy market</strong></li>
+<li>Very <strong>low volume</strong></li>
+<li>Strong resistance just above</li>
+<li>After a <strong>sharp, vertical fall</strong> (needs base first)</li>
+<li>During major news/events</li>
+</ul>
+<hr />
+<h2 id="9-common-mistakes-traders-make">9️⃣ Common Mistakes Traders Make</h2>
+<ul>
+<li>Buying every engulfing candle blindly</li>
+<li>Ignoring higher timeframe resistance</li>
+<li>Placing stop-loss inside the support zone</li>
+<li>Expecting reversal immediately without confirmation</li>
+</ul>
+<hr />
+<h2 id="pro-insight">🧠 Pro Insight</h2>
+<blockquote>
+<p>A bullish engulfing at daily support is <strong>not a buy signal</strong><br />
+It is <strong>permission to look for long trades</strong></p>
+</blockquote>
+<hr />
+<h2 id="quick-checklist-before-entry">✅ Quick Checklist (Before Entry)</h2>
+<ul>
+<li>[ ] At a clear daily support zone</li>
+<li>[ ] Prior down move or correction</li>
+<li>[ ] Strong engulfing close</li>
+<li>[ ] Acceptable volume</li>
+<li>[ ] Clear upside space</li>
+<li>[ ] Minimum 2R reward</li>
+</ul>
+<hr />
+<h2 id="best-use-case">📌 Best Use Case</h2>
+<ul>
+<li>Swing trading</li>
+<li>Positional trades</li>
+<li>Intraday continuation using daily bias</li>
+</ul>
+<hr />
+<p><strong>End of Document</strong></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
