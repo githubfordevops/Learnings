@@ -27,26 +27,7 @@ Bold | `**text**` |
 Code | `` `code` `` |
 Code block | ``` ``` |
 3 `s optionally followed by lang(ex:go) and then 3`s to close the code block
+The 3`s should be in a separate line.
 Link | `[text](url)` |
 
 ---
-
-## What you should do now (practice)
-
-1. Create **one Markdown file**
-2. Write **any one learning** you already know
-3. Use:
-   - 1 heading
-   - 1 bullet list
-   - 1 code block
-
----
-
-## Next step (after this)
-
-Next I’ll explain **Git** with:
-- Only **5 commands**
-- No theory
-- Exact commands you’ll type
-
-👉 When ready, reply: **“Next: Git”**
