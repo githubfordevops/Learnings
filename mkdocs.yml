@@ -17,6 +17,7 @@ nav:
 
   - Kubernetes:
       - Documentation: k8s/k8sdocumentation.md
+      - k8s-scheduling-docs: k8s/k8s-scheduling-docs.md
       - NSR: k8s/NSR.md
 
   - Finance:
