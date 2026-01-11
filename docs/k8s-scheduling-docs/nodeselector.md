@@ -3,7 +3,6 @@
 
 # 📘 `docs/scheduling/nodeselector.md`
 
-```md
 # nodeSelector
 
 ## What is nodeSelector?
@@ -33,3 +32,4 @@ Defined inside **PodSpec**, therefore works for:
 spec:
   nodeSelector:
     disktype: ssd
+```
