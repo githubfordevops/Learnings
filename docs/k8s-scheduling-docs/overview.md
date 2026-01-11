@@ -21,3 +21,4 @@ All scheduling rules depend on **node labels**.
 ```bash
 kubectl label node node-1 disktype=ssd
 kubectl label node node-2 gpu=true
+```
