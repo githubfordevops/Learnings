@@ -17,8 +17,14 @@ nav:
 
   - Kubernetes:
       - Documentation: k8s/k8sdocumentation.md
-      - k8s-scheduling-docs: k8s/k8s-scheduling-docs.md
       - NSR: k8s/NSR.md
+
+  - K8s-scheduling-docs:
+      - overview: k8s-scheduling-docs/overview.md
+      - node-affinity: k8s-scheduling-docs/node-affinity.md
+      - nodeselector: k8s-scheduling-docs/nodeselector.md
+      - taints: k8s-scheduling-docs/taints.md
+      - tolerations: k8s-scheduling-docs/tolerations.md
 
   - Finance:
       - 3R-Strategy: finance/3R_Trading_Framework.md
