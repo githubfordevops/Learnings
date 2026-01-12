@@ -3,7 +3,6 @@
 
 # 🚫 `docs/scheduling/taints.md`
 
-```md
 # Taints
 
 ## Why Taints Exist
