@@ -166,6 +166,19 @@
             
             <li class="nav-item" data-bs-level="1"><a href="#docsschedulingtaintsmd" class="nav-link">🚫 docs/scheduling/taints.md</a>
               <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#taints" class="nav-link">Taints</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#why-taints-exist" class="nav-link">Why Taints Exist</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#what-is-a-taint" class="nav-link">What is a Taint?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-bs-level="2"><a href="#taint-effects" class="nav-link">Taint Effects</a>
               <ul class="nav flex-column">
               </ul>
@@ -179,26 +192,20 @@
 
 <hr />
 <h1 id="docsschedulingtaintsmd">🚫 <code>docs/scheduling/taints.md</code></h1>
-<pre><code class="language-md"># Taints
-
-## Why Taints Exist
-
-Before taints:
-&gt; Pods freely scheduled onto nodes
-
-Problems:
+<h1 id="taints">Taints</h1>
+<h2 id="why-taints-exist">Why Taints Exist</h2>
+<p>Before taints:</p>
+<blockquote>
+<p>Pods freely scheduled onto nodes</p>
+</blockquote>
+<p>Problems:
 - Infra nodes polluted
 - Control-plane overloaded
-- Special hardware misused
-
----
-
-## What is a Taint?
-
-A **taint** is applied to a **node** to repel Pods.
-
-```text
-key=value:effect
+- Special hardware misused</p>
+<hr />
+<h2 id="what-is-a-taint">What is a Taint?</h2>
+<p>A <strong>taint</strong> is applied to a <strong>node</strong> to repel Pods.</p>
+<pre><code class="language-text">key=value:effect
 </code></pre>
 <h2 id="taint-effects">Taint Effects</h2>
 <h3 id="noschedule">NoSchedule</h3>
