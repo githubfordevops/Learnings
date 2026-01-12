@@ -14,6 +14,7 @@ nav:
   - Others:
       - Helpfile: others/Helpfile.md
       - Git Commands: others/gitfilecommands.md
+      - git-add-folder: others/git-add-folder.md
 
   - Kubernetes:
       - Documentation: k8s/k8sdocumentation.md
