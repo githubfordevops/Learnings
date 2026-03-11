@@ -38,6 +38,9 @@ Miscellaneous notes that don’t fit into a single core category.
 - [Git commands](others/gitfilecommands/)
   <br/>Commonly used Git commands and workflows for day-to-day development.
 
+- [Cursor-SSH-navigation] (cursor/Navigate-to-directory)
+  <br/> navigations across directories after SSH connectivity
+
 ---
 
 ## How to use this site
