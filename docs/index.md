@@ -41,6 +41,9 @@ Miscellaneous notes that don’t fit into a single core category.
 - [Cursor-SSH-navigation](cursor/Navigate-to-directory)
   <br/> navigations across directories after SSH connectivity
 
+- [tls stuff](docs/others/tls-explaned.md)
+  <br/> tls stuff explained
+
 ---
 
 ## How to use this site
