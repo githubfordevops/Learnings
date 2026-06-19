@@ -16,6 +16,7 @@ nav:
       - Git Commands: others/gitfilecommands.md
       - git-add-folder: others/git-add-folder.md
       - cursor-ssh: cursor/Navigate-to-directory.md
+      - tls-explained: docs/others/tls-explaned.md
 
   - Kubernetes:
       - Documentation: k8s/k8sdocumentation.md
